@@ -1,0 +1,85 @@
+# Matrix Condition Number Research — Code Index
+
+**Author: Raul E. Garcia  
+**Last Update: 2025-09-20  
+**Email: siliconvalleypro1@yahoo.com  
+
+Matlab Version: M2024b is used for this code as of 2025,
+we can not help or support the use of other versions of Matlab.
+
+This repository provides supporting MATLAB (and other) code for the paper on  
+matrix condition numbers (Theorem 1 in the SIAM submission, originally Theorem 6.2).  
+The paper itself refers to this index rather than to individual file names.  
+All code follows the versioning and naming convention described below.
+
+This repo is for research related to Matrix Condition Numbers, all the code 
+here is not for commercial use. 
+
+Most codes generate random matrices in Matlab for researchers to view the 
+structures as defined in Theorem 1 (or 6.2 in PPT or PDF file) - of the 
+Canonical block submatrices - a 2x2 block matrix of: 
+1) An - an nxn submatrix of An+1, 
+2) and the 2 edge vectors V1 and V2 for nx1 and 1xn and 
+3) the last diagonal element a(n+1,n+1)
+from an original n+1 x n+1 real matrix. See the Theorem 1 for details.
+
+
+---
+
+## File Naming Convention
+
+M_CNR_V####_DESCRIPTION.m
+
+
+- **M** = MATLAB code (`.m` file)  
+- **CNR** = Condition Number Research  
+- **V####** = version number (e.g., `V1001` = first public release)  
+- **DESCRIPTION** = short code details  
+
+**Example:**  
+`M_CNR_V1001_RandomMatrixGen.m`
+
+---
+
+## Versioning
+
+- Older versions are never modified.  
+- Each new release increments the `V####` counter.  
+- This ensures reproducibility across paper references.
+
+---
+
+## Usage
+
+Most codes allow specifying:
+
+- Matrix size (`n x n`, real, square)  
+- Range of condition numbers (min, max or just min condition number)  
+- Run ID   
+- Other options depending on version  
+
+**Example MATLAB call:**
+
+```matlab
+% Generate a 100x100 matrix with condition number between 1e2 and 1e4
+[A, report] = M_CNR_V1005_RandomMatrixGen(100, 1e2, 1e4);
+
+Special Matrices
+Users may supply their own matrices (or use MATLAB’s gallery).
+Rename MATRIX input to M or adjust code as needed.
+
+Generated random matrices may be saved for reproducibility.
+
+Notes
+All routines are for research and educational use.
+Commercial use requires prior approval.
+Planned language coverage: MATLAB, Python, and C# (separate folders).
+Directory structure (tentative):
+
+bash
+Copy code
+/matlab
+/python
+/csharp
+/docs
+/examples
