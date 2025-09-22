@@ -31,16 +31,16 @@ cndStructureFunction_FULL_PLOTS_ALL_UPDATEDV4_ONE_RUN.m - only runs one test mat
 
 ## File Naming Convention
 
-M_CNR_V####_DESCRIPTION.m
+CND with V#### for version - then DESCRIPTION.m  - can not have spaces - use underscore for Matlab
 
 
 - MATLAB code (`.m` file)  
 - CND = Condition Number research  
-- V#### = version number (e.g., `V1001` = first public release)  
-- DESCRIPTION = short code details  
+- V#### = version number (e.g., `V1001` or V1 = first public release)  
+- DESCRIPTION = short code details, more details at the start of the m-file  
 
 **Example:**  
-`M_CNR_V1001_RandomMatrixGen.m`
+`CND_V1_RandomMatrixGen.m`
 
 ---
 
@@ -63,13 +63,9 @@ Most codes allow specifying:
 
 **Example MATLAB call:**
 
-```matlab
-% Generate a 100x100 matrix with condition number between 1e2 and 1e4
-[A, report] = M_CNR_V1005_RandomMatrixGen(100, 1e2, 1e4);
-
 Special Matrices
 Users may supply their own matrices (or use MATLAB’s gallery).
-Rename MATRIX input to M or adjust code as needed.
+Rename MATRIX input to M or adjust code as needed in your copy for code
 
 Generated random matrices may be saved for reproducibility.
 
@@ -79,11 +75,4 @@ Commercial use requires prior approval.
 Planned language coverage: MATLAB, Python, and C# (separate folders).
 Directory structure (tentative):
 
-bash
-Copy code
-/matlab
-/python
-/csharp
-/docs
 
-/examples
