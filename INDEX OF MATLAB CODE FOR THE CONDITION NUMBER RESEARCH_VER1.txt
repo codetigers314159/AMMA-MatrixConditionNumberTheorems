@@ -26,15 +26,18 @@ from an original n+1 x n+1 real matrix. See the Theorem 1 for details.
 
 ---
 
+FILE ADDED: 09-21-25 BY REG
+cndStructureFunction_FULL_PLOTS_ALL_UPDATEDV4_ONE_RUN.m - only runs one test matrix, with user spec values range, plots all major submatrices, user can specify min/max cond#
+
 ## File Naming Convention
 
 M_CNR_V####_DESCRIPTION.m
 
 
-- **M** = MATLAB code (`.m` file)  
-- **CNR** = Condition Number Research  
-- **V####** = version number (e.g., `V1001` = first public release)  
-- **DESCRIPTION** = short code details  
+- MATLAB code (`.m` file)  
+- CND = Condition Number research  
+- V#### = version number (e.g., `V1001` = first public release)  
+- DESCRIPTION = short code details  
 
 **Example:**  
 `M_CNR_V1001_RandomMatrixGen.m`
@@ -82,4 +85,5 @@ Copy code
 /python
 /csharp
 /docs
+
 /examples
