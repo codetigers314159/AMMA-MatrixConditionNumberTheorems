@@ -1,0 +1,8 @@
+size=60x60
+sparse=0 real=0 square=1 symmetric=0 (rel=1.423e+00)
+trace=8.245356205683528
+range=[-3.798798889154835, 3.358586175509906] (Δ=7.157385064664741)
+diag: mean=0.137423 std=1.31432 min=0.0788974 max=-0.543752
+counts: pos=1784 neg=1816 zero=0  integer=0 singleLike=3600 doubleLike=0 complex=3600
+|det|≈3.310545e+49 (log|det|=1.140238e+02, complex matrix)
+edge metrics: ||A_n||F=8.346886e+01  ||V1||=1.021427e+01  ||V2||=1.077759e+01  |b0|=1.476836e-01

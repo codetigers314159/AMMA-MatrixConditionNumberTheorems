@@ -1,0 +1,7 @@
+size=70x30
+sparse=0 real=1 square=0 symmetric=0 (rel=NaN)
+trace=-2441908.812890254
+range=[-3773481.786659937, 3402564.285548933] (Δ=7176046.07220887)
+diag: mean=-81397 std=1.03075e+06 min=-2.93331e+06 max=3.07901e+06
+counts: pos=1043 neg=1057 zero=0  integer=0 singleLike=2100 doubleLike=0 complex=0
+edge metrics: ||A_n||F=2.879544e+07  ||V1||=5.698314e+06  ||V2||=5.172688e+06  |b0|=6.891310e+05
